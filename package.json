@@ -2,7 +2,7 @@
   "name": "dev_one",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://AlexLunarr.github.io/dev_one",
+  "homepage": "https://AlexLunar.github.io/dev_one",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /dev_one/"
