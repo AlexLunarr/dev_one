@@ -1,0 +1,16 @@
+@import './colormap';
+
+.features__title {
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.features__description {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+
+	color: getColor('text');
+
+}

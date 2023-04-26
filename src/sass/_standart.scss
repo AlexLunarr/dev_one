@@ -38,3 +38,30 @@ ul {
 .active {
 	color: getColor('secondary');
 }
+
+.button {
+
+
+	// display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border: none;
+	border-radius: 4px;
+}
+
+.section__title {
+	visibility: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
