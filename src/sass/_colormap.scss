@@ -1,0 +1,22 @@
+$colors: (
+	'primary': #FFFFFF,
+	'accent': #F5F4FA,
+	'secondary': #2196F3,
+	'overlay-hero': rgba(47, 48, 58, 0.4),
+	'overlay-activity':rgba(47, 48, 58, 0.8),
+	'overlay-modal': rgba(0, 0, 0, 0.2),
+	'background':#AFB1B8,
+	'background-footer':#2F303A,
+	'header-border': #ECECEC,
+	'title':#212121,
+	'text':#757575,
+	'logo-header':#000000,
+	'logo-footer':#FFFFFF,
+	'icon-footer':rgba(255, 255, 255, 0.1),
+	'icon-modal': #212121,
+
+);
+
+@function getColor($key) {
+	@return map-get($colors, $key);
+}

@@ -1,3 +1,40 @@
+@import './colormap';
+
 body {
-	background-color: rgba(158, 155, 115, 0.418);
+	background-color: getColor('primary');
+	color: getColor('title');
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+
+}
+
+a {
+	color: inherit;
+	font-style: normal;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.logo {
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	line-height: 1.19;
+	color: getColor('secondary');
+}
+
+.logo__header {
+	color: getColor('logo-header');
+}
+
+.logo__footer {
+	color: getColor('logo-footer');
+}
+
+.active {
+	color: getColor('secondary');
 }

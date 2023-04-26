@@ -1,1 +1,24 @@
+@import './colormap';
 
+.header__menu {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.header__menu-link {
+	&:hover {
+		color: getColor('secondary');
+	}
+}
+
+
+.header__contacts {
+	@extend .header__menu;
+	color: getColor('text');
+}
+
+.header__contacts-link:hover {
+	color: getColor('secondary');
+}
