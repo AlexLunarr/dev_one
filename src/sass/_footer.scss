@@ -1,0 +1,52 @@
+@import './colormap';
+
+.footer {
+	background-color: getColor('background-footer');
+}
+
+.footer__location {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	color: getColor('primary');
+}
+
+.footer__email {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	color: getColor('text-footer');
+
+	&:hover,
+	&:focus {
+		color: getColor('secondary');
+	}
+}
+
+.footer__phone {
+	@extend .footer__email;
+}
+
+.footer__call {
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	color: getColor('primary');
+}
+
+.footer__button {
+	min-width: 200px;
+	min-height: 50px;
+
+	background: getColor('secondary');
+	color: getColor('primary');
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 28px;
+	padding-right: 28px;
+}

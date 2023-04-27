@@ -1,0 +1,22 @@
+@import './colormap';
+
+.team__title {
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
+.team__name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
+
+.team__position {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	color: getColor('text');
+}

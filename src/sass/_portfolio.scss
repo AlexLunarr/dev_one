@@ -1,0 +1,49 @@
+@import './colormap';
+
+.portfolio__button {
+	min-height: 38px;
+	min-width: 73px;
+
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+
+	background: getColor('accent');
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 22px;
+	padding-right: 22px;
+
+	&:hover,
+	&:focus {
+		background: getColor('secondary');
+		color: getColor('primary');
+	}
+
+}
+
+.portfolio__description {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.56;
+
+
+	color: getColor('primary');
+	background-color: getColor('overlay-portfolio');
+}
+
+.portfolio__item-title {
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+
+}
+
+.portfolio__category {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.88;
+	color: getColor('text');
+}

@@ -8,7 +8,9 @@
 }
 
 .header__menu-link {
-	&:hover {
+
+	&:hover,
+	&:focus {
 		color: getColor('secondary');
 	}
 }
@@ -19,6 +21,10 @@
 	color: getColor('text');
 }
 
-.header__contacts-link:hover {
-	color: getColor('secondary');
+.header__contacts-link {
+
+	&:hover,
+	&:focus {
+		color: getColor('secondary');
+	}
 }
