@@ -37,6 +37,14 @@ img {
 	height: auto;
 }
 
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	border: dashed #2a2a2a;
+}
+
 .logo {
 	font-family: 'Raleway', sans-serif;
 	font-size: 26px;
@@ -82,3 +90,17 @@ img {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+// .list-item {
+// 	display: inline-block;
+
+// 	border: 1px dashed tomato;
+// 	// min-width: 30px;
+// 	// min-height: 30px;
+// 	border-radius: 50%;
+// 	text-align: center;
+
+// 	&:nth-child(3n+1) {
+// 		background-color: getColor('text');
+// 	}
+// }
