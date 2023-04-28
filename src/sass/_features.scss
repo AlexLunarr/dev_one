@@ -1,5 +1,20 @@
 @import './colormap';
 
+.features {
+	padding-top: 94px;
+	padding-bottom: 47px;
+}
+
+.features__list {
+	display: flex;
+}
+
+.features__item {
+	+.features__item {
+		margin-left: 30px;
+	}
+}
+
 .features__title {
 	font-size: 14px;
 	line-height: 1.14;
@@ -13,4 +28,5 @@
 
 	color: getColor('text');
 
+	margin-top: 10px;
 }

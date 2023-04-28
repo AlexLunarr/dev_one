@@ -2,6 +2,10 @@
 
 .hero {
 	background-color: getColor('overlay-hero');
+	height: 600px;
+	width: 1600;
+	margin: 0 auto;
+	padding: 200px 0;
 }
 
 .hero__title {
@@ -29,4 +33,7 @@
 	padding-bottom: 0;
 	padding-left: 32px;
 	padding-right: 32px;
+
+	margin: 30px auto 0;
+	display: block;
 }

@@ -1,13 +1,43 @@
 @import './colormap';
 
+.header>.container {
+	display: flex;
+	align-items: center;
+}
+
+.header__nav {
+	display: inline-flex;
+	align-items: center;
+	margin-right: auto;
+
+	>.logo {
+		padding: 24px 0 25px;
+		margin-right: 93px;
+	}
+}
+
 .header__menu {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+
+
 }
 
+.header__menu-item {
+	display: inline-block;
+
+	+.header__menu-item {
+		margin-left: 50px;
+	}
+
+}
+
+
 .header__menu-link {
+	display: inline-block;
+	padding: 32px 0;
 
 	&:hover,
 	&:focus {
@@ -17,11 +47,26 @@
 
 
 .header__contacts {
+
+
 	@extend .header__menu;
 	color: getColor('text');
 }
 
+.header__contacts-list {
+	display: flex;
+	align-items: center;
+}
+
+.header__contacts-item {
+	+.header__contacts-item {
+		margin-left: 30px;
+	}
+}
+
 .header__contacts-link {
+	display: inline-block;
+	padding: 32px 0;
 
 	&:hover,
 	&:focus {

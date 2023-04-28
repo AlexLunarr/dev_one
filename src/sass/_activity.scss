@@ -1,16 +1,38 @@
 @import './colormap';
 
+.activity {
+	padding-top: 47px;
+	padding-bottom: 94px;
+}
+
 .activity__title {
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
 }
 
+.activity__list {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.activity__item {
+	+.activity__item {
+		// margin-left: 30px;
+	}
+
+}
+
 .activity__text {
+	padding: 27px 0;
+
+
 	font-size: 14px;
 	line-height: 1.14;
 	text-align: center;
 	text-transform: uppercase;
+
 
 	color: getColor('primary');
 	background-color: getColor('overlay-activity');
