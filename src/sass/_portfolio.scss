@@ -1,5 +1,22 @@
 @import './colormap';
 
+.portfolio {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.portfolio__filters {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.portfolio__filter {
+	+.portfolio__filter {
+		margin-left: 8px;
+	}
+}
+
 .portfolio__button {
 	min-height: 38px;
 	min-width: 73px;
@@ -24,7 +41,34 @@
 
 }
 
+.portfolio__list {
+
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: -30px;
+}
+
+.portfolio__item {
+	cursor: pointer;
+	max-width: 370px;
+	width: calc(100%/3);
+	margin-left: 30px;
+	margin-top: 30px;
+
+	border: 1px solid getColor('border-portfolio');
+
+	&:hover,
+	&:focus {
+		// background: #FFFFFF;
+
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	}
+}
+
 .portfolio__description {
+
+	padding: 64px 24px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.56;
@@ -32,6 +76,10 @@
 
 	color: getColor('primary');
 	background-color: getColor('overlay-portfolio');
+}
+
+.portfolio__text {
+	padding: 20px 24px;
 }
 
 .portfolio__item-title {

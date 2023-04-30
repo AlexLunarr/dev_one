@@ -83,23 +83,3 @@
 
 	margin-top: 20px;
 }
-
-.social {
-	display: flex;
-	margin-top: 20px;
-}
-
-.social__item {
-	width: 44px;
-	height: 44px;
-
-	border: 1px solid tomato;
-	border-radius: 50%;
-	text-align: center;
-	background-color: getColor('accent');
-
-	+.social__item {
-		margin-left: 10px;
-	}
-
-}

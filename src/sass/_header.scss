@@ -1,5 +1,11 @@
 @import './colormap';
 
+.header {
+
+	border-bottom: 1px solid #ECECEC;
+
+}
+
 .header>.container {
 	display: flex;
 	align-items: center;
