@@ -1,7 +1,37 @@
 @import './colormap';
 
 .footer {
+	padding: 60px 0;
 	background-color: getColor('background-footer');
+}
+
+.footer__list {
+	display: flex;
+	align-items: center;
+
+	&:last-child {
+		margin-left: auto;
+	}
+}
+
+.footer__item {
+	+.footer__item {
+		margin-left: 93px;
+	}
+
+	&:last-child {
+		margin-left: auto;
+	}
+}
+
+.footer__address {
+	margin-top: 20px;
+}
+
+.footer__item {
+	+.features__item {
+		margin-top: 9px;
+	}
 }
 
 .footer__location {
@@ -45,8 +75,31 @@
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
+
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-left: 28px;
 	padding-right: 28px;
+
+	margin-top: 20px;
+}
+
+.social {
+	display: flex;
+	margin-top: 20px;
+}
+
+.social__item {
+	width: 44px;
+	height: 44px;
+
+	border: 1px solid tomato;
+	border-radius: 50%;
+	text-align: center;
+	background-color: getColor('accent');
+
+	+.social__item {
+		margin-left: 10px;
+	}
+
 }
