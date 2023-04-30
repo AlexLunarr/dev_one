@@ -28,11 +28,12 @@
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 
+	display: flex;
+
 
 }
 
 .header__menu-item {
-	display: inline-block;
 
 	+.header__menu-item {
 		margin-left: 50px;
