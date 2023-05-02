@@ -15,6 +15,15 @@
 
 }
 
+.features__image {
+	display: flex;
+	justify-content: center;
+	height: 120px;
+	background: getColor('accent');
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
 .features__title {
 	font-size: 14px;
 	line-height: 1.14;
