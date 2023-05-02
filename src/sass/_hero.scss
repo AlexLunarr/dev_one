@@ -3,9 +3,14 @@
 .hero {
 	background-color: getColor('overlay-hero');
 	height: 600px;
-	max-width: 1600;
+	max-width: 1600px;
 	margin: 0 auto;
 	padding: 200px 0;
+
+	background-image: linear-gradient(to right, getColor('overlay-hero'), getColor('overlay-hero')), url(../images/desktop/heromin/Img@2x-min.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 .hero__title {

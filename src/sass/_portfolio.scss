@@ -46,18 +46,22 @@
 
 	display: flex;
 	flex-wrap: wrap;
-	margin: -15px;
-	flex-grow: 1;
+
+	// margin: -15px;
+	// flex-grow: 1;
+	gap: 30px;
 
 }
 
 .portfolio__item {
+
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
+	// flex-grow: 1;
 
-	flex-basis: calc((100%/3) - 30px);
-	margin: 15px;
+	flex-basis: calc((100% - 60px)/3);
+	// margin: 15px;
 
 	// border: 1px solid getColor('border-portfolio');
 
