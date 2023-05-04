@@ -1,7 +1,43 @@
 @import './colormap';
 
+.clients {
+	padding: 94px 0;
+}
+
 .clients__title {
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
+	margin-bottom: 50px;
+}
+
+.clients__list {
+	display: flex;
+	gap: 30px;
+
+}
+
+.clients__item {
+	width: calc((100% - 150px)/6);
+	height: 92px;
+	border: 1px solid getColor('background');
+	color: getColor('background');
+	border-radius: 4px;
+
+	&:hover,
+	&:focus {
+		border-color: getColor('secondary');
+		color: getColor('secondary');
+	}
+}
+
+.clients__link {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clients__icon {
+	fill: currentColor;
 }

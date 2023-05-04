@@ -34,6 +34,16 @@
 	}
 }
 
+.footer .social__item {
+	background: rgba(255, 255, 255, 0.1);
+
+	&:hover,
+	&:focus {
+		background-color: getColor('secondary');
+		color: getColor('primary');
+	}
+}
+
 .footer__location {
 	font-weight: 400;
 	font-size: 14px;
@@ -68,6 +78,8 @@
 .footer__button {
 	min-width: 200px;
 	min-height: 50px;
+	// display: flex;
+
 
 	background: getColor('secondary');
 	color: getColor('primary');
@@ -82,4 +94,9 @@
 	padding-right: 28px;
 
 	margin-top: 20px;
+
+}
+
+.footer__button-icon {
+	margin-left: 10px;
 }
