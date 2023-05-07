@@ -1,0 +1,61 @@
+@import './colormap';
+
+.backdrop {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 528px;
+	width: 100%;
+
+	padding: 40px;
+
+	background: getColor('primary');
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+
+}
+
+.modal__close {
+	cursor: pointer;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: getColor('primary');
+	color: #000000;
+
+	&:hover,
+	&:focus {
+		border-color: getColor('secondary');
+		color: getColor('secondary');
+	}
+
+}
+
+.modal__close-icon {
+	fill: currentColor;
+}
+
+.backdrop.is-hidden {
+	// overflow: hidden;
+	opacity: 0;
+	pointer-events: none;
+
+}
