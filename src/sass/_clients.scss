@@ -23,6 +23,7 @@
 	border: 1px solid getColor('background');
 	color: getColor('background');
 	border-radius: 4px;
+	transition: color $transitions, border-color $transitions;
 
 	&:hover,
 	&:focus {

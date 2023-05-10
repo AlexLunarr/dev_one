@@ -37,6 +37,7 @@
 .footer .social__item {
 	background: rgba(255, 255, 255, 0.1);
 
+
 	&:hover,
 	&:focus {
 		background-color: getColor('secondary');
@@ -56,6 +57,7 @@
 	font-size: 14px;
 	line-height: 1.71;
 	color: getColor('text-footer');
+	transition: color $transitions, background-color $transitions;
 
 	&:hover,
 	&:focus {
@@ -78,7 +80,7 @@
 .footer__button {
 	min-width: 200px;
 	min-height: 50px;
-	// display: flex;
+	display: flex;
 
 
 	background: getColor('secondary');

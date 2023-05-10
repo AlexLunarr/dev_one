@@ -40,6 +40,7 @@
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: getColor('primary');
 	color: #000000;
+	transition: color $transitions, border-color $transitions;
 
 	&:hover,
 	&:focus {

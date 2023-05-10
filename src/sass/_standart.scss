@@ -38,16 +38,24 @@ img {
 	height: auto;
 }
 
+// pre {
+// 	display: inline;
+// }
+
 // section {
 // 	outline: 0.5px dashed blue;
 
 
 // }
 
+.active {
+	color: getColor('secondary');
+}
+
 
 
 .container {
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 
@@ -78,9 +86,6 @@ img {
 	color: getColor('logo-footer');
 }
 
-.active {
-	color: getColor('secondary');
-}
 
 .button {
 
@@ -126,6 +131,7 @@ img {
 	border-radius: 50%;
 	// background-color: getColor('accent');
 	color: getColor('background');
+	transition: color $transitions, background-color $transitions;
 
 	&:hover,
 	&:focus {

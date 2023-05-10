@@ -34,6 +34,9 @@
 }
 
 .header__menu-item {
+	position: relative;
+	// display: flex;
+	// flex-direction: column;
 
 	+.header__menu-item {
 		margin-left: 50px;
@@ -41,16 +44,33 @@
 
 }
 
+.header__menu-item.active::after {
+	content: '';
+	height: 4px;
+	width: 100%;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	border-radius: 2px;
+	background-color: getColor('secondary');
+}
+
+
+
 
 .header__menu-link {
-	display: inline-block;
+	display: inline-flex;
+	flex-direction: column;
 	padding: 32px 0;
+	transition: color $transitions;
 
 	&:hover,
 	&:focus {
 		color: getColor('secondary');
 	}
 }
+
+
 
 
 .header__contacts {
@@ -83,6 +103,7 @@
 	display: inline-flex;
 	align-items: center;
 	padding: 32px 0;
+	transition: color $transitions;
 
 	&:hover,
 	&:focus {
