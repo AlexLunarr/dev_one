@@ -37,3 +37,105 @@
     </li>
   </ul>
 </div>
+<div class="container">
+  <form class="form" name="signup_form" autocomplete="on" novalidate>
+    <label
+      >Email
+      <input type="email" name="" id="" placeholder="asdfasfsaf" />
+    </label>
+    <label
+      >Password
+      <input type="email" name="" id="" />
+    </label>
+    <label for="user_address"
+      >Address<input type="text" name="" id="user_address"
+    /></label>
+
+    <label
+      >fish
+      <input type="radio" name="animal" value="fish" id="" />
+    </label>
+    <label
+      >dog
+      <input type="radio" name="animal" value="dog" id="" checked />
+    </label>
+    <label
+      >cat
+      <input type="radio" name="animal" value="cat" id="" />
+    </label>
+    <label
+      >fish
+      <input type="checkbox" name="type" value="fish" />
+    </label>
+    <label
+      >dog
+      <input type="checkbox" name="type" value="dog" checked />
+    </label>
+    <label
+      >cat
+      <input type="checkbox" name="type" value="cat" />
+    </label>
+
+    <label
+      >cat
+      <input type="number" name="" value="cat" step="0.1" min="1" max="5" />
+    </label>
+
+    <label
+      >cat
+      <input type="range" name="" value="30" step="5" min="5" max="50" />
+    </label>
+    <label
+      >cat
+      <input type="date" name="" />
+    </label>
+    <label
+      >cat
+      <textarea type="text" name=""></textarea>
+    </label>
+    <fieldset>
+      <legend>Size</legend>
+      <label for="size">Size</label>
+      <select name="size" id="size">
+        <optgroup label="Dog">
+          <option value="small">Small</option>
+          <option value="big" selected>Big</option>
+          <option value="large">Large</option>
+        </optgroup>
+
+        <optgroup label="Dog">
+          <option value="small">Small</option>
+          <option value="big" selected>Big</option>
+          <option value="large">Large</option>
+        </optgroup>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Word</legend>
+      <label
+        >Word
+        <input list="word" name="words" required />
+      </label>
+      <datalist id="word">
+        <option value="small">Small</option>
+        <option value="big">Big</option>
+        <option value="large">Large</option>
+      </datalist>
+    </fieldset>
+
+    <div role="group" aria-labelledby="word-head">
+      <p id="word-head">Word</p>
+      <label
+        >Word
+        <input list="word" name="words" />
+      </label>
+      <datalist id="word">
+        <option value="small">Small</option>
+        <option value="big">Big</option>
+        <option value="large">Large</option>
+      </datalist>
+    </div>
+    <button type="submit">submit</button>
+  </form>
+</div>

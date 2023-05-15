@@ -77,3 +77,37 @@
 
 
 }
+
+.form {
+	display: flex;
+	flex-direction: column;
+	margin: 100px auto;
+
+	padding: 40px;
+	max-width: 500px;
+	background-color: aqua;
+	border: 1px solid tomato;
+	border-radius: 10px;
+
+	&>label:not(first-child) {
+		// margin-top: 10px;
+	}
+
+	& textarea {
+		resize: both;
+		// resize: horizontal;
+		// resize: none;
+		// resize: vertical;
+	}
+
+	& div {
+		border: 1px dashed blue;
+	}
+}
+
+fieldset {
+
+	border: none;
+	border: 1px dashed tomato;
+
+}
