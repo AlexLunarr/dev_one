@@ -60,3 +60,38 @@
 	pointer-events: none;
 
 }
+
+.form {
+
+	margin-top: 12px;
+}
+
+.form__label {
+	display: flex;
+	flex-direction: column;
+
+	&+.form__label {
+		margin-top: 10px;
+	}
+}
+
+.form__input {
+	margin-top: 4px;
+}
+
+.checkbox {
+	display: block;
+	margin-top: 20px;
+}
+
+.checkbox__button {
+
+	display: block;
+	min-width: 200px;
+	min-height: 50px;
+
+	margin: 30px auto 0;
+
+	background: getColor('secondary');
+	color: getColor('primary');
+}
