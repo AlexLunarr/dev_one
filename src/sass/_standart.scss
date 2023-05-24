@@ -48,7 +48,11 @@ img {
 
 // }
 
-.active {
+.body-index .active:first-child {
+	color: getColor('secondary');
+}
+
+.body-portfolio .active:not(:first-child) {
 	color: getColor('secondary');
 }
 

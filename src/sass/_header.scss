@@ -44,7 +44,18 @@
 
 }
 
-.header__menu-item.active::after {
+.body-index .active:first-child::after {
+	content: '';
+	height: 4px;
+	width: 100%;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	border-radius: 2px;
+	background-color: getColor('secondary');
+}
+
+.body-portfolio .active:not(:first-child):after {
 	content: '';
 	height: 4px;
 	width: 100%;

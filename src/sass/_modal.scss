@@ -61,27 +61,172 @@
 
 }
 
+.modal__title {
+
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+}
+
 .form {
+
 
 	margin-top: 12px;
 }
 
 .form__label {
+
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+	color: getColor('text');
+
 	display: flex;
 	flex-direction: column;
+
+	cursor: inherit;
 
 	&+.form__label {
 		margin-top: 10px;
 	}
+
+	&:hover .form__input {
+		border-color: getColor('secondary');
+	}
+
+	&:hover .form__icon {
+		fill: getColor('secondary');
+	}
 }
 
 .form__input {
-	margin-top: 4px;
+	padding-left: 40px;
+	width: 100%;
+	height: 40px;
+	color: getColor('title');
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	transition: border-color $transitions;
+
+	&:focus,
+	&:hover {
+		outline: none;
+		border-color: getColor('secondary');
+		// fill: getColor('secondary');
+	}
 }
 
+.form__tumb:focus-within .form__icon {
+	fill: getColor('secondary');
+}
+
+.form__tumb {
+
+	margin-top: 4px;
+	position: relative;
+
+}
+
+.form__icon {
+	left: 15px;
+	bottom: 50%;
+	transform: translate(0, 50%);
+	position: absolute;
+	fill: getColor('icon-modal');
+	transition: fill $transitions;
+}
+
+.form__text {
+	resize: none;
+	margin-top: 4px;
+	padding: 12px 16px;
+	transition: border-color $transitions;
+
+	&:focus {
+		outline: none;
+		border-color: getColor('secondary');
+	}
+
+	// height: 120px;
+}
+
+
 .checkbox {
-	display: block;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+
 	margin-top: 20px;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	color: getColor('text');
+
+	cursor: pointer;
+
+
+}
+
+.checkbox__input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+
+
+
+
+	&:checked+.checkbox__icon {
+		border-color: getColor('secondary');
+		background: getColor('secondary');
+		background-image: url(../images/desktop/icon-check.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-origin: border-box;
+	}
+
+	&:focus+.checkbox__icon,
+	&:hover+.checkbox__icon {
+		border-color: getColor('secondary')
+	}
+
+}
+
+.checkbox__icon {
+	width: 16px;
+	height: 15px;
+	margin-right: 5px;
+	display: inline-block;
+
+	border: 2px solid getColor('title');
+	// border-color: getColor('title');
+	border-radius: 2px;
+	transition: border-color $transitions, background $transitions, background-image $transitions;
+
+
+}
+
+.checkbox__link {
+	color: getColor('secondary');
+	margin-left: 4px;
+	border-bottom: 0.7px solid currentColor;
+	line-height: 0.82;
+
 }
 
 .checkbox__button {
